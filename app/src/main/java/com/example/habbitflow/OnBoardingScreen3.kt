@@ -3,6 +3,7 @@ package com.example.habbitflow
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -18,8 +19,14 @@ class OnBoardingScreen3 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val onboarding1 = findViewById<Button>(R.id.explore)
-        onboarding1.setOnClickListener {
+        val explore = findViewById<Button>(R.id.explore)
+        explore.setOnClickListener {
+            val intent = Intent(this, LoginPage::class.java)
+            startActivity(intent)
+        }
+
+        val skip = findViewById<TextView>(R.id.skip)
+        skip.setOnClickListener {
             val intent = Intent(this, LoginPage::class.java)
             startActivity(intent)
         }
