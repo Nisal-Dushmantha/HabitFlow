@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Primary Colors-->
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="Soft_Teal">#FF4CB5AE</color>
+    <color name="Warm_Orange">#FFFFA45B</color>
+
+    <!-- Secondary Colors-->
+    <color name="Soft_Yellow">#FFFFE29A</color>
+    <color name="Sky_Blue">#FF7EC8E3</color>">
+
+    <!-- Secondary Colors-->
+    <color name="Light_Gray">#FFF5F5F5</color>
+    <color name="Charcoal">#FF333333</color>">
+
+    <!-- Accent Colors-->
+    <color name="Leaf_Green">#FFA7D49B</color>
+    <color name="Soft_Pink">#FFFFBFCB</color>">
 </resources>

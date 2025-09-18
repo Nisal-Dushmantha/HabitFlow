@@ -5,13 +5,25 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/Light_Gray"
     tools:context=".MainActivity">
 
+    <!-- Logo / Illustration -->
+
+    <!-- Motto -->
+
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="264dp"
-        android:layout_height="314dp"
-        app:srcCompat="@drawable/blue_and_green_modern_hospital_logo"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="208dp" />
+        android:id="@+id/imageView4"
+        android:layout_width="364dp"
+        android:layout_height="455dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="138dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_with_motto" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

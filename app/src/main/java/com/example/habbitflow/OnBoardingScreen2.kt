@@ -1,33 +1,20 @@
 package com.example.habbitflow
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.lifecycle.lifecycleScope
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
 
-class MainActivity : AppCompatActivity() {
+class OnBoardingScreen2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
-
-        // Handle edge-to-edge layout
+        setContentView(R.layout.activity_on_boarding_screen2)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
-        }
-
-        // ⏳ Delay 2 seconds, then navigate to Onboarding1
-        lifecycleScope.launch {
-            delay(2000)
-            startActivity(Intent(this@MainActivity, OnBoardingScreen1::class.java))
-            finish() // close MainActivity so user can't go back to it
         }
     }
 }
