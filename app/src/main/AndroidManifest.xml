@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HabbitFlow">
         <activity
+            android:name=".LoginPage"
+            android:exported="false" />
+        <activity
+            android:name=".OnBoardingScreen3"
+            android:exported="false" />
+        <activity
             android:name=".OnBoardingScreen2"
             android:exported="false" />
         <activity
